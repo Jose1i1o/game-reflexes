@@ -11,4 +11,6 @@ IDs are only used for javascript
 We are using only one css & one html --> We are using the template.
 Use flex not grid.
 
+All class and id names in kebab-case
+
 *************************
