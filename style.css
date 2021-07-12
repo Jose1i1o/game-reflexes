@@ -66,15 +66,43 @@ main {
     text-align: left;
 }
 
-
-/*! sergi **/
-
-
-/** jose **/
-
 .main_button-image {
     width: 29px;
     height: 37px;
 }
 
-.article_section--principal-page
+.article_main-page--flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.article_div_main-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3rem 2rem;
+    grid-auto-flow: row;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: ". . .";
+    zoom: 120%;
+    margin-bottom: 3rem;
+}
+
+.article_div_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem 2rem;
+    zoom: 120%;
+    grid-template-areas: ". . ." ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
