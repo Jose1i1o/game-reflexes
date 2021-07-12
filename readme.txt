@@ -1,5 +1,7 @@
 *************************
 
+We work on individual branches. Before doing push, we consult our PM. 
+
 We use BEM methodology
 Example: <nav class="tag--element__property"></nav>
 
