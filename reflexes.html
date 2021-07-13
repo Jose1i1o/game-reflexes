@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Naipes Game</title>
     <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
@@ -21,13 +22,13 @@
                         <strong>Choose a username </strong>
                     </h1>
                     <p class="section-username">Username</p>
-                    <input class="section-input-name">
+                    <input class="section-input-name" id="input-username">
+                    <button type="submit" id="input-confirm">ok</button>
                 </div>
                 <div class="section-level">
                     <select name="nivels" id="nivel">
                         <option value="default">Choose a level</option>
                         <option value="easy">Easy</option>
-                        
                         <option value="medium">Medium</option>
                         <option value="hard">Hard</option>
                       </select>
@@ -38,7 +39,7 @@
                 </div>
             </div>
             </div>
-            <div class="foto-provisional" id=" how_to_play ">
+            <div class="foto-provisional" id="how_to_play">
                 <img src="./img/cursor1.png" alt="">
             </div>
             <div class="item-3">
@@ -51,53 +52,68 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Player 1</td>
-                            <td>Time 1</td>
+                            <td id="player1">Player 1</td>
+                            <td id="time1">Time 1</td>
                         </tr>
                         <tr>
-                            <td>Player 2</td>
-                            <td>Time 2</td>
+                            <td id="player1">Player 2</td>
+                            <td id="time1">Time 2</td>
                         </tr>
                         <tr>
-                            <td>layer 3</td>
-                            <td>Time 3</td>
+                            <td id="player1">Player 3</td>
+                            <td id="time1">Time 3</td>
                         </tr>
                         <tr>
-                            <td>Player 4</td>
-                            <td>Time 4</td>
+                            <td id="player1">Player 4</td>
+                            <td id="time1">Time 4</td>
                         </tr>
                         <tr>
-                            <td>Player 5</td>
-                            <td>Time 5</td>
+                            <td id="player1">Player 5</td>
+                            <td id="time1">Time 5</td>
                         </tr>
                     </tbody>
                     </tr>
                 </table>
         </section>
     </article>
-    <article>
-        <section class="article_main-page--flex">
-            <div class="article_div_main-card"> <img src="assets/5.jpg" alt="five clover">
-            </div>
-            <hr>
-            <div class="article_div_grid">
-                <div class="div_grid_card1" id="card1"><img src="assets/2.jpg" alt=""></div>
-                <div class="div_grid_card2" id="card2"><img src="assets/3.jpg" alt=""></div>
-                <div class="div_grid_card3" id="card3"><img src="assets/4.jpg" alt=""></div>
-                <div class="div_grid_card4" id="card4"><img src="assets/5.jpg" alt=""></div>
-                <div class="div_grid_card5" id="card5"><img src="assets/6.jpg" alt=""></div>
-                <div class="div_grid_card6" id="card6"><img src="assets/J.jpg" alt=""></div>
-            </div>
-            <hr>
-            </div>
+
+    <!--<article>
+    <section class="article_main-page--flex">
+        <div class="article_div_main-card"> <img src="assets/5.jpg" alt="five clover">
+        </div>
+        <hr>
+        <div class="article_div_grid">
+            <div class="div_grid_card1" id="card1"><img src="assets/2.jpg" alt=""></div>
+            <div class="div_grid_card2" id="card2"><img src="assets/3.jpg" alt=""></div>
+            <div class="div_grid_card3" id="card3"><img src="assets/4.jpg" alt=""></div>
+            <div class="div_grid_card4" id="card4"><img src="assets/5.jpg" alt=""></div>
+            <div class="div_grid_card5" id="card5"><img src="assets/6.jpg" alt=""></div>
+            <div class="div_grid_card6" id="card6"><img src="assets/J.jpg" alt=""></div>
+        </div>
+        <hr>
+        </div>
+    </section>
+    <section>
+        <h1>Congrats</h1>
+        <div id="ranking">
+            <!--TODO-Ranking template-->
+    <!--</div>
         </section>
-        <section>
-            <h1>Congrats</h1>
-            <div id="ranking">
-                <!--TODO-Ranking template-->
-            </div>
-        </section>
-    </article>
+        </article>-->
+    <script>
+        /* let $inputConfirm = document.querySelector("#input-confirm");
+                                            $inputConfirm.addEventListener("click", getValue);
+
+                                            function getValue() {
+                                            var $userName = document.querySelector("#input-username").value;
+
+                                            }
+                                            const ranking = {
+                                            length: 5,
+                                            player: $userName.textContent
+                                            } */
+    </script>
 </body>
+
 
 </html>
