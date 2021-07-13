@@ -1,143 +1,194 @@
-                    /* Importing Google Fonts*/
-                    
-                    @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
-                    @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-                    /*default*/
-                    
-                    .body {
-                        margin: 0;
-                        padding: 0;
-                        font-family: "Open Sans", sans-serif;
-                    }
-                    /*header style*/
-                    
-                    .header {
-                        color: white;
-                        background-color: black;
-                        padding: 1.5rem;
-                        display: flex;
-                        justify-content: center;
-                    }
-                    /*main*/
-                    
-                    main {
-                        padding-bottom: 5rem;
-                    }
-                    /*Elements*/
-                    /*? andres **/
-                    
-                    .section--principal-page {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        flex-direction: row;
-                    }
-                    
-                    .section--item-1 {
-                        align-self: flex-start;
-                    }
-                    
-                    .section-username {
-                        color: gray;
-                    }
-                    
-                    .section_input-name {
-                        text-align: center;
-                        background-color: black;
-                        color: white;
-                        font-family: "Open Sans", sans-serif;
-                        font-weight: 600;
-                    }
-                    
-                    .section_input-name:hover {
-                        background-color: rgb(46, 221, 28);
-                    }
-                    
-                    .section-level {
-                        padding-top: 15px;
-                        padding-bottom: 30px;
-                    }
-                    
-                    .foto-provisional {
-                        padding-top: 8%;
-                    }
-                    
-                    .main_button-text {
-                        border: none;
-                        outline: none;
-                        padding: 0.5rem;
-                        text-align: center;
-                        background-color: black;
-                        color: white;
-                        font-family: "Open Sans", sans-serif;
-                        font-weight: 600;
-                        text-transform: uppercase;
-                        cursor: pointer;
-                        transition: background 0.1s ease-in;
-                    }
-                    
-                    .main_button-text:hover {
-                        background-color: rgb(46, 221, 28);
-                    }
-                    /*.foto1 {}*/
-                    
-                    .item-3 {
-                        align-self: flex-start;
-                        padding-top: 8%;
-                    }
-                    
-                    div.table-classification {
-                        font-family: Arial, Helvetica, sans-serif;
-                        border: 5px solid #000000;
-                        background-color: #FFFFFF;
-                        width: 50%;
-                        height: 200px;
-                        text-align: center;
-                        border-radius: 20px;
-                    }
-                    
-                    .divTable.table-classification .divTableCell,
-                    .divTable.table-classification .divTableHead {
-                        border: 9px solid #000000;
-                        padding: 7px 2px;
-                    }
-                    
-                    .divTable.table-classification .divTableBody .divTableCell {
-                        font-size: 13px;
-                        color: #000000;
-                    }
-                    
-                    .divTable.table-classification .divTableHeading {
-                        background: rgb(46, 221, 28);
-                    }
-                    
-                    .divTable.table-classification .divTableHeading .divTableHead {
-                        font-size: 18px;
-                        font-weight: normal;
-                    }
-                    /* DivTable.com */
-                    
-                    .divTable {
-                        display: table;
-                    }
-                    
-                    .divTableRow {
-                        display: table-row;
-                    }
-                    
-                    .divTableHeading {
-                        display: table-header-group;
-                    }
-                    
-                    .divTableCell,
-                    .divTableHead {
-                        display: table-cell;
-                    }
-                    
-                    .divTableHeading {
-                        display: table-header-group;
-                    }
-                    
-                    .divTableBody {
-                        display: table-row-group;
-                    }
+/* Importing Google Fonts*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/*default*/
+
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/*header style*/
+
+.logo {
+    color: white;
+    background-color: black;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*main*/
+
+main {
+    padding-bottom: 5rem;
+}
+
+
+/*Elements*/
+
+
+/*? andres **/
+
+.section--principal-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.section--item-1 {
+    align-self: flex-start;
+}
+
+.section--div-title {
+    border-color: 2px solid black;
+}
+
+.section-username {
+    color: gray;
+}
+
+.section-input-name {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+}
+
+.section-input-name:hover {
+    background-color: rgb(46, 221, 28);
+}
+
+.section-level {
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.foto-provisional {
+    align-self: flex-start;
+    padding-top: 8%;
+}
+
+.main-button-text {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.1s ease-in;
+}
+
+.main-button-text:hover {
+    background-color: rgb(46, 221, 28);
+}
+
+.item-3 {
+    align-self: flex-start;
+}
+
+div.table-classification {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 5px solid #000000;
+    background-color: #FFFFFF;
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.divTable.table-classification .divTableCell,
+.divTable.table-classification .divTableHead {
+    border: 9px solid #000000;
+    padding: 7px 2px;
+}
+
+.divTable.table-classification .divTableBody .divTableCell {
+    font-size: 13px;
+    color: #000000;
+}
+
+.divTable.table-classification .divTableHeading {
+    background: rgb(46, 221, 28);
+}
+
+.divTable.table-classification .divTableHeading .divTableHead {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+/* DivTable.com */
+
+.divTable {
+    display: table;
+}
+
+.divTableRow {
+    display: table-row;
+}
+
+.divTableHeading {
+    display: table-header-group;
+}
+
+.divTableCell,
+.divTableHead {
+    display: table-cell;
+}
+
+.divTableHeading {
+    display: table-header-group;
+}
+
+.divTableBody {
+    display: table-row-group;
+}
+
+
+/*jose*/
+
+.article_main-page--flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.article_div_main-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 3rem 2rem;
+    grid-auto-flow: row;
+    place-items: center;
+    grid-template-areas: ". . .";
+    zoom: 120%;
+    margin-bottom: 3rem;
+}
+
+.article_div_grid {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem 2rem;
+    zoom: 120%;
+    grid-template-areas: ". . ." ". . .";
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+}
