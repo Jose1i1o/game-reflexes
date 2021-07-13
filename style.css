@@ -26,18 +26,18 @@
                     /*Elements*/
                     /*? andres **/
                     
-                    .section_principal-page {
+                    .section--principal-page {
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         flex-direction: row;
                     }
                     
-                    .item-1 {
+                    .section--item-1 {
                         align-self: flex-start;
                     }
                     
-                    .username {
+                    .section-username {
                         color: gray;
                     }
                     
