@@ -14,7 +14,7 @@
 
 /*header style*/
 
-.header {
+.logo {
     color: white;
     background-color: black;
     padding: 1.5rem;
@@ -46,11 +46,15 @@ main {
     align-self: flex-start;
 }
 
+.section--div-title {
+    border-color: 2px solid black;
+}
+
 .section-username {
     color: gray;
 }
 
-.section_input-name {
+.section-input-name {
     text-align: center;
     background-color: black;
     color: white;
@@ -58,7 +62,7 @@ main {
     font-weight: 600;
 }
 
-.section_input-name:hover {
+.section-input-name:hover {
     background-color: rgb(46, 221, 28);
 }
 
@@ -68,10 +72,11 @@ main {
 }
 
 .foto-provisional {
+    align-self: flex-start;
     padding-top: 8%;
 }
 
-.main_button-text {
+.main-button-text {
     border: none;
     outline: none;
     padding: 0.5rem;
@@ -85,16 +90,12 @@ main {
     transition: background 0.1s ease-in;
 }
 
-.main_button-text:hover {
+.main-button-text:hover {
     background-color: rgb(46, 221, 28);
 }
 
-
-/*.foto1 {}*/
-
 .item-3 {
     align-self: flex-start;
-    padding-top: 8%;
 }
 
 div.table-classification {
