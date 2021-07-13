@@ -172,10 +172,7 @@ div.table-classification {
     grid-template-rows: 1fr;
     gap: 3rem 2rem;
     grid-auto-flow: row;
-    justify-content: center;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
+    place-items: center;
     grid-template-areas: ". . .";
     zoom: 120%;
     margin-bottom: 3rem;
@@ -183,6 +180,7 @@ div.table-classification {
 
 .article_div_grid {
     display: grid;
+    place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 3rem 2rem;
