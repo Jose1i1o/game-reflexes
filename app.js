@@ -12,7 +12,7 @@ var cardClick = document
         winTime();
         stopInterval();
     });
-var playerPrueba = document.querySelector("#player")
+var playerPrueba = document.querySelector("#player1")
     //-----------------------------------------------------Variables--------------------------------------------
 var counter = 0;
 var timing = 0;
@@ -33,7 +33,7 @@ $inputConfirm.addEventListener("click", getValue);
 function getValue() { //store the name player in array
     playerArray.push($userName);
     console.log(playerArray);
-
+    playerPrueba.textContent = "player1.name"
 }
 
 
@@ -61,7 +61,7 @@ function stopInterval() {
     player1["name"] = playerArray[0];
     player1["time"] = ranking[0];
     console.log(player1);
-    playerPrueba.innerHTML = player1.name
+    playerPrueba.textContent = "player1.name"
 }
 
 
