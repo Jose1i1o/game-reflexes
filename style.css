@@ -76,7 +76,7 @@ main {
     padding-top: 8%;
 }
 
-.main-button-text {
+.main__button--text {
     border: none;
     outline: none;
     padding: 0.5rem;
@@ -90,7 +90,7 @@ main {
     transition: background 0.1s ease-in;
 }
 
-.main-button-text:hover {
+.main__button--text:hover {
     background-color: rgb(46, 221, 28);
 }
 
@@ -98,63 +98,54 @@ main {
     align-self: flex-start;
 }
 
-div.table-classification {
+
+/*table ini*/
+
+table.raking-table {
     font-family: Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
     border: 5px solid #000000;
     background-color: #ffffff;
     width: 50%;
     height: 200px;
+=======
+    border: 7px solid #1c6ea4;
+    background-color: #fffafb;
+    width: 100%;
+>>>>>>> cf01a3435e65687aede7b1a2ec25abe1e471273a
     text-align: center;
-    border-radius: 20px;
+    border-collapse: collapse;
 }
 
-.divTable.table-classification .divTableCell,
-.divTable.table-classification .divTableHead {
+table.raking-table td,
+table.raking-table th {
     border: 9px solid #000000;
-    padding: 7px 2px;
+    padding: 6px 3px;
 }
 
-.divTable.table-classification .divTableBody .divTableCell {
+table.raking-table tbody td {
     font-size: 13px;
     color: #000000;
 }
 
-.divTable.table-classification .divTableHeading {
+table.raking-table thead {
     background: rgb(46, 221, 28);
 }
 
-.divTable.table-classification .divTableHeading .divTableHead {
-    font-size: 18px;
-    font-weight: normal;
+table.raking-table thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    border-left: 2px solid #d0e4f5;
+}
+
+table.raking-table thead th:first-child {
+    border-left: none;
 }
 
 
-/* DivTable.com */
-
-.divTable {
-    display: table;
-}
-
-.divTableRow {
-    display: table-row;
-}
-
-.divTableHeading {
-    display: table-header-group;
-}
-
-.divTableCell,
-.divTableHead {
-    display: table-cell;
-}
-
-.divTableHeading {
-    display: table-header-group;
-}
-
-.divTableBody {
-    display: table-row-group;
-}
+/*table finish*/
 
 
 /*jose*/
@@ -191,4 +182,14 @@ div.table-classification {
     align-content: center;
     justify-items: center;
     align-items: center;
+}
+
+.activePage {
+    display: block;
+}
+
+.display-none {
+    display: none;
+    width: 100%;
+    height: 100%;
 }
