@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Naipes Game</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript " src="./app.js" defer></script>
+
 </head>
 
 <body>
@@ -22,62 +24,62 @@
                         <strong>Choose a username </strong>
                     </h1>
                     <p class="section-username">Username</p>
-                    <input class="" class="section-input-name">
+                    <input class="section-input-name" id="input-username">
+                    <button type="submit" id="input-confirm">ok</button>
                 </div>
                 <div class="section-level">
-                    <label for="cars">Choose a level:</label>
                     <select name="nivels" id="nivel">
                         <option value="default">Choose a level</option>
                         <option value="easy">Easy</option>
-                        
                         <option value="medium">Medium</option>
                         <option value="hard">Hard</option>
                       </select>
                 </div>
-                <div class="main__start--button">
-                    <button class="main__button--text" id="next">Empezar juego</button>
+                <div class="main-start-button">
+                    <button id="next" class="main-button-text">Empezar juego</button>
                     </button>
                 </div>
             </div>
-            <div class="foto-provisional" id="how_to_play ">
+            </div>
+            <div class="foto-provisional" id="how_to_play">
                 <img src="./img/cursor1.png" alt="">
             </div>
             <div class="item-3">
-                <div class="divTable table-classification">
-                    <div class="divTableHeading">
-                        <div class="divTableRow">
-                            <div class="divTableHead">Classification
-                            </div>
-                        </div>
-                    </div>
-                    <div class="divTableBody">
-                        <div class="divTableRow">
-                            <div class="divTableCell">Master 1
-                            </div>
-                        </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Maquina 2
-                            </div>
-                        </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Fenomeno 3
-                            </div>
-                        </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">Manco 4
-                            </div>
-                        </div>
-                        <div class="divTableRow">
-                            <div class="divTableCell">pa tu casa 5
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <table class="raking-table">
+                    <thead>
+                        <tr>
+                            <th>classification </th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="player1">Player 1</td>
+                            <td id="time1">Time 1</td>
+                        </tr>
+                        <tr>
+                            <td id="player1">Player 2</td>
+                            <td id="time1">Time 2</td>
+                        </tr>
+                        <tr>
+                            <td id="player1">Player 3</td>
+                            <td id="time1">Time 3</td>
+                        </tr>
+                        <tr>
+                            <td id="player1">Player 4</td>
+                            <td id="time1">Time 4</td>
+                        </tr>
+                        <tr>
+                            <td id="player1">Player 5</td>
+                            <td id="time1">Time 5</td>
+                        </tr>
+                    </tbody>
+                    </tr>
+                </table>
         </section>
     </article>
-    <div id="article__page2" class="display-none">
-        <article>
+    <article>
+        <div id="article__page2" class="display-none">
             <section class="article_main-page--flex">
                 <div class="article_div_main-card"> <img src="assets/5.jpg" alt="five clover">
                 </div>
@@ -91,8 +93,9 @@
                     <div class="div_grid_card6" id="card6"><img src="assets/J.jpg" alt=""></div>
                 </div>
                 <hr>
-    </div>
-    </section>
+        </div>
+        </section>
+    </article>
     <article id="article__page3" class="display-none">
         <h1>Congrats</h1>
         <div id="ranking">
@@ -100,8 +103,6 @@
         </div>
     </article>
     </div>
-    <script type="text/javascript " src="app.js"></script>
-    <script type="text/javascript " src=""></script>
 </body>
 
 </html>

@@ -25,7 +25,14 @@
 * We will count the time within the start of the game and the end of the game.
 * 
 * We will show the user rank at the initial page. 
-
+*
+*
+*
+*
+*
+*
+*
+*
 
 
 
