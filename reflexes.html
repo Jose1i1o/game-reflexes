@@ -7,48 +7,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Naipes Game</title>
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript " src="./app.js" defer></script>
+
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="logo">Naipes Click</h1>
-    </header>
-    <main>
-        <!--?Andres ---------------------------------------------->
-        <template class="section_principal-page">
-            <div class="section_div-title">
-                <h1>
-                    <strong>Choose a user name </strong>
-                </h1>
-                <p class="section_principal-paragraph">Username</p><br>
-                <input class="section_input-name">
-            </div>
 
-            <!--TODO----Sergi--------------------------------------------------->
-            <div id="how_to_play">
+    <article>
+        <header>
+            <h1 class="logo">Naipes Click</h1>
+        </header>
+        <section class="section--principal-page">
+            <div class="section--item-1">
+                <div class="section--div-title">
+                    <h1>
+                        <strong>Choose a username </strong>
+                    </h1>
+                    <p class="section-username">Username</p>
+                    <input class="section-input-name" id="input-username">
+                    <button type="submit" id="input-confirm">ok</button>
+                </div>
+                <div class="section-level">
+                    <select name="nivels" id="nivel">
+                        <option value="default">Choose a level</option>
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                      </select>
+                </div>
+                <div class="main-start-button">
+                    <button class="main-button-text">Empezar juego</button>
+                    </button>
+                </div>
+            </div>
+            </div>
+            <div class="foto-provisional" id="how_to_play">
+                <img src="./img/cursor1.png" alt="">
+            </div>
+            <div class="item-3">
+                <table class="raking-table">
+                    <thead>
+                        <tr>
+                            <th>classification </th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="player1">Player 1</td>
+                            <td id="time1">Time 1</td>
+                        </tr>
+                        <tr>
+                            <td id="player1">Player 2</td>
+                            <td id="time1">Time 2</td>
+                        </tr>
+                        <tr>
+                            <td id="player1">Player 3</td>
+                            <td id="time1">Time 3</td>
+                        </tr>
+                        <tr>
+                            <td id="player1">Player 4</td>
+                            <td id="time1">Time 4</td>
+                        </tr>
+                        <tr>
+                            <td id="player1">Player 5</td>
+                            <td id="time1">Time 5</td>
+                        </tr>
+                    </tbody>
+                    </tr>
+                </table>
+        </section>
+    </article>
 
 
-            </div>
-            <!--!----Jose------------------------------------------------------->
-            <div>
-                <button class="main_container-button">
-                <i class="main_button-image" <div class="main_button-text"> Empejar juego
-                </button>
-            </div>
 
-            <!--*---Yaiser------------------------------------------------------>
-            <div>
-                <select name="level" id="level" placeholder="Select your level">
-                <label for="check1">Easy</label>
-                <option type="checkbox" name="easy" value="easy" id="check1">
-                <label for="check2">Medium</label>
-                <option type="checkbox" name="medium" value="medium" id="check2">
-                <label for="check3">Hard</label>
-                <option type="checkbox" name="hard" value="hard" id="check3">
-                </select>
-            </div>
-        </template>
-    </main>
     <article class="article_main-page--flex">
         <div class="article_div_main-card"> <img src="assets/5.jpg" alt="five clover">
         </div>
@@ -64,28 +96,14 @@
         <hr>
         </div>
     </article>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> af0e27387ce70d3c26706b99434d5f42ec336b43
     <section>
         <h1>Congrats</h1>
         <div id="ranking">
             <!--TODO-Ranking template-->
         </div>
     </section>
-<<<<<<< HEAD
-    <script type="text/javascript " src=""></script>
-    <script type="text/javascript " src=""></script>
-=======
->>>>>>> cbc5ec559c470cf250133cd298d255530e1d5740
-=======
-    >>>>>>> master
->>>>>>> a7941e80c68c112051ebd2b4fb4cc5362807209a
-=======
 
->>>>>>> af0e27387ce70d3c26706b99434d5f42ec336b43
 </body>
+
 
 </html>
