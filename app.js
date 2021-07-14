@@ -12,10 +12,18 @@ var cardClick = document
         winTime();
         stopInterval();
     });
-//-----------------------------------------------------Variables--------------------------------------------
+var playerPrueba = document.querySelector("#player")
+    //-----------------------------------------------------Variables--------------------------------------------
 var counter = 0;
 var timing = 0;
-//------------------------------------------------ Add Event Listener---------------------------------------
+var ranking = [];
+var playerArray = [];
+var playerCom = [];
+let player1 = {
+        name: "",
+        time: 0
+    }
+    //------------------------------------------------ Add Event Listener---------------------------------------
 let btnNext = document.getElementById("next").addEventListener("click", () => { //when you click start game we have two events
     page1to2(); //switch pages
     timer(); //Satr the counter
@@ -23,10 +31,12 @@ let btnNext = document.getElementById("next").addEventListener("click", () => { 
 $inputConfirm.addEventListener("click", getValue);
 // --------------------------------------------------Functions----------------------------------------
 function getValue() { //store the name player in array
-    var playerArray = [];
-    var fullName = playerArray.push($userName);
+    playerArray.push($userName);
     console.log(playerArray);
+
 }
+
+
 
 function page1to2() {
     homePage.style.display = "none"; //switch styles 
@@ -41,13 +51,25 @@ function timer() {
 }
 
 function winTime() { //store the score in array
-    var ranking = [];
-    var timeMine = ranking.push(counter);
-    console.log(timeMine);
+    ranking.push(counter);
     console.log(ranking);
 
 }
 
 function stopInterval() {
     clearInterval(timing);
+    player1["name"] = playerArray[0];
+    player1["time"] = ranking[0];
+    console.log(player1);
+    playerPrueba.innerHTML = player1.name
 }
+
+
+
+/* let planA = +
+    console.log(planA); */
+// arrays
+/* var playerCom =
+    playerCom.push()
+console.log(playerCom) */
+//
