@@ -103,16 +103,9 @@ main {
 
 table.raking-table {
     font-family: Arial, Helvetica, sans-serif;
-<<<<<<< HEAD
-    border: 5px solid #000000;
-    background-color: #ffffff;
-    width: 50%;
-    height: 200px;
-=======
     border: 7px solid #1c6ea4;
     background-color: #fffafb;
     width: 100%;
->>>>>>> cf01a3435e65687aede7b1a2ec25abe1e471273a
     text-align: center;
     border-collapse: collapse;
 }
