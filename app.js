@@ -24,6 +24,22 @@ $inputConfirm.addEventListener("click", getValue);
 function getValue() {
     var $userName = document.querySelector("#input-username").value;
     console.log($userName);
+    let player = $userName;
+    let playerArray = [];
+    for (let $usernames of player) {
+        playerArray.push($usernames);
+        let userNameComp = playerArray.join("");
+        $classification = document.querySelector("#player").innerHTML = userNameComp
+        console.log($classification)
+    }
+    /*for (let index = 0; index < $classification.length; index++) {
+        const element = array[index];
+        console.log(element)
+
+    }
+
+    //let playersss = playerArray.join("")
+    // console.log(typeof(playersss))*/
 }
 /* const ranking = {
                 length: 5,
