@@ -24,11 +24,7 @@ var counter = 0;
 var timing = 0;
 var ranking = [];
 var playerArray = [];
-var playerCom = [];
-let player1 = {
-    name: "",
-    time: 0,
-};
+
 let profiles = [];
 let profile1 = {
     name: "",
@@ -57,7 +53,6 @@ let btnNext = document.getElementById("next").addEventListener("click", () => {
 function getValue() {
     let $userName = document.getElementById("inputuser").value;
     playerArray.push($userName); //store the name player in array
-    console.log($userName);
 }
 
 function page1to2() {
@@ -91,10 +86,59 @@ function timer() {
 function winTime() {
     //store the score in array
     ranking.push(counter);
-    console.log(ranking);
 }
 
 function stopInterval() {
+    // for (let i = 0; i < playerArray.length; i++) {
+    // profile1.name = playerArray[playerArray.length - 1];
+    // profile1.time = ranking[ranking.length - 1];
+    // profiles.push(profile1);
+    // console.log(profiles);
+
+    profile1.name = playerArray[playerArray.length - 1];
+    profile1.time = ranking[ranking.length - 1];
+    profiles.push({
+        name: playerArray[playerArray.length - 1],
+        time: ranking[ranking.length - 1],
+    });
+    profiles.sort(function(a, b) {
+        return a.time - b.time;
+    });
+
+    console.log(profiles);
+
     clearInterval(timing);
-    profiles.push(profile1);
+    counter = 0;
 }
+
+//     // profile2.name = playerArray[1];
+//     // profile2.time = ranking[1];
+//     // profiles.push(profile2);
+
+//     // profile3.name = "name player3";
+//     // profile3.time = 400;
+//     // profiles.push(profile3);
+
+//     // profile4.name = "name player 4";
+//     // profile4.time = 1900;
+//     // profiles.push(profile4);
+
+//     let profilesDiv = document.getElementsByClassName("profiles")[0];
+
+//     profiles.forEach(function(entry) {
+//         let profile = document.createElement("div");
+//         profile.className = "profile";
+//         profile.textContent = entry.name + " -- " + entry.time;
+//         profilesDiv.appendChild(profile);
+//     });
+// // }
+
+// // //select every card by id
+// // fu;
+// // var cards = document.getElementsByClassName("card");
+// // console.log(cards);
+// // //get a random number between 1 and 6
+// // function getRandom() {
+// //     var randomIndex = Math.floor(Math.random() * 6);
+// //     return randomIndex;
+// // }
