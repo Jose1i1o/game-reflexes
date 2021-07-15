@@ -4,7 +4,7 @@
 let homePage = document.getElementById("article__page1");
 let gamePage = document.getElementById("article__page2");
 let thankYouPage = document.getElementById("article__page3");
-// let congratsMessage = document.getElementById("congrats");
+let congratsMessage = document.getElementById("congrats");
 
 var cardClick = document
     .getElementById("card4") //event to capture click cards events and stop counter
@@ -12,6 +12,7 @@ var cardClick = document
         winTime();
         stopInterval();
         page2to3();
+        thankYouMessage();
     });
 
 var reloadEvent = document
@@ -70,10 +71,11 @@ function resetGame() {
     homePage.classList.remove("display-none");
 }
 
-// function thankYouMessage() {
-//     congratsMessage = `Thank you ${$userName}
-//     your time is ${counter}`;
-// }
+function thankYouMessage() {
+    var congratsM = `Thank you ${playerArray[0]}
+    your time is ${ranking[0]}`;
+    congratsMessage.appendChild(congratsM);
+}
 
 function timer() {
     timing = setInterval(() => {
