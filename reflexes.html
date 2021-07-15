@@ -13,100 +13,163 @@
 
 <body>
     <header>
-        <h1 id="header__h1" class="logo">Naipes Click</h1>
+        <h1 id="header__h1" class="logo container-headertext">Naipes Click</h1>
     </header>
     <!--?Andres ---------------------------------------------->
-    <article id="article__page1" class="activePage">
-        <section class="section--principal-page">
-            <div class="section--item-1">
-                <div class="section--div-title">
-                    <h1>
-                        <strong>Choose a username </strong>
-                    </h1>
-                    <p class="section-username">Username</p>
-                    <input type="text" class="section-input-name" id="inputuser" required>
-                </div>
-                <div class="section-level">
-                    <select name="nivels" id="nivel">
+    <div id="article__page1" class="containergrid">
+        <article class="activePage">
+            <section class="section--principal-page container-maincontainer">
+                <div class="section--item-1">
+                    <div class="section--div-title">
+                        <h1>
+                            <strong>Choose a username </strong>
+                        </h1>
+                        <p class="section-username">Username</p>
+                        <input type="text" class="section-input-name" id="inputuser" required>
+                    </div>
+                    </br>
+                    <!-- <div class="section-level">
+                        <select name="nivels" id="nivel">
                         <option value="default">Choose a level</option>
                         <option value="easy">Easy</option>
                         <option value="medium">Medium</option>
                         <option value="hard">Hard</option>
                       </select>
+                    </div> -->
+                    <div class="main-start-button">
+                        <button id="next" class="main__button--text">Empezar juego</button>
+                        </button>
+                    </div>
                 </div>
-                <div class="main-start-button">
-                    <button id="next" class="main-button-text">Empezar juego</button>
-                    </button>
+                <div class="foto-provisional" id="how_to_play">
+                    <img src="./img/cursor1.png" alt="">
                 </div>
+            </section>
+        </article>
+
+        <div class="item-3 container-rankingcontainer activePage">
+            <table class="raking-table flex-end">
+                <thead>
+                    <tr>
+                        <th>classification </th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="player1">Player 1</td>
+                        <td id="time1">Time 1</td>
+                    </tr>
+                    <tr>
+                        <td id="player2">Player 2</td>
+                        <td id="time2">Time 2</td>
+                    </tr>
+                    <tr>
+                        <td id="player3">Player 3</td>
+                        <td id="time3">Time 3</td>
+                    </tr>
+                    <tr>
+                        <td id="player4">Player 4</td>
+                        <td id="time4">Time 4</td>
+                    </tr>
+                    <tr>
+                        <td id="player5">Player 5</td>
+                        <td id="time5">Time 5</td>
+                    </tr>
+                </tbody>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </article>
+    <article id="article__page2" class="display-none containergrid">
+        <section class="container-maincontainer">
+            <div class="article_div_main-card"> <img src="assets/poker_cards/example_card/5.jpg" alt="five clover">
             </div>
-            </div>
-            <div class="foto-provisional" id="how_to_play">
-                <img src="./img/cursor1.png" alt="">
+            <div class="article_div_grid">
+                <div class="div_grid_card1" id="card1"><img src="assets/base_card/2.jpg" alt=""></div>
+                <div class="div_grid_card2" id="card2"><img src="assets/base_card/3.jpg" alt=""></div>
+                <div class="div_grid_card3" id="card3"><img src="assets/base_card/4.jpg" alt=""></div>
+                <div class="div_grid_card4" id="card4"><img src="assets/base_card/5.jpg" alt=""></div>
+                <div class="div_grid_card5" id="card5"><img src="assets/base_card/6.jpg" alt=""></div>
+                <div class="div_grid_card6" id="card6"><img src="assets/base_card/J.jpg" alt=""></div>
             </div>
         </section>
-
-    </article>
-    <div class="item-3">
-        <table class="raking-table">
-            <thead>
-                <tr>
-                    <th>classification </th>
-                    <th>Time</th>
+        <div class="item-3 container-rankingcontainer activePage">
+            <table class="raking-table flex-end">
+                <thead>
+                    <tr>
+                        <th>classification </th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="player1">Player 1</td>
+                        <td id="time1">Time 1</td>
+                    </tr>
+                    <tr>
+                        <td id="player2">Player 2</td>
+                        <td id="time2">Time 2</td>
+                    </tr>
+                    <tr>
+                        <td id="player3">Player 3</td>
+                        <td id="time3">Time 3</td>
+                    </tr>
+                    <tr>
+                        <td id="player4">Player 4</td>
+                        <td id="time4">Time 4</td>
+                    </tr>
+                    <tr>
+                        <td id="player5">Player 5</td>
+                        <td id="time5">Time 5</td>
+                    </tr>
+                </tbody>
                 </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td id="player1">Player 1</td>
-                    <td id="time1">Time 1</td>
-                </tr>
-                <tr>
-                    <td id="player2">Player 2</td>
-                    <td id="time2">Time 2</td>
-                </tr>
-                <tr>
-                    <td id="player3">Player 3</td>
-                    <td id="time3">Time 3</td>
-                </tr>
-                <tr>
-                    <td id="player4">Player 4</td>
-                    <td id="time4">Time 4</td>
-                </tr>
-                <tr>
-                    <td id="player5">Player 5</td>
-                    <td id="time5">Time 5</td>
-                </tr>
-            </tbody>
-            </tr>
-        </table>
-    </div>
-    <div class="profiles">
-    </div>
-    <article>
-        <div id="article__page2" class="display-none">
-            <section class="article_main-page--flex">
-                <div class="article_div_main-card"> <img src="assets/5.jpg" alt="five clover">
-                </div>
-                <hr>
-                <div class="article_div_grid">
-                    <div class="div_grid_card1" id="card1"><img src="assets/2.jpg" alt=""></div>
-                    <div class="div_grid_card2" id="card2"><img src="assets/3.jpg" alt=""></div>
-                    <div class="div_grid_card3" id="card3"><img src="assets/4.jpg" alt=""></div>
-                    <div class="div_grid_card4" id="card4"><img src="assets/5.jpg" alt=""></div>
-                    <div class="div_grid_card5" id="card5"><img src="assets/6.jpg" alt=""></div>
-                    <div class="div_grid_card6" id="card6"><img src="assets/J.jpg" alt=""></div>
-                </div>
-                <hr>
+            </table>
         </div>
+    </article>
+
+    <article id="article__page3" class="display-none containergrid">
+        <section class="container-maincontainer">
+            <h1 id="congrats"></h1>
+            <p>You finished the game in</p>
+            <button>Play again</button>
         </section>
-    </article>
-
-    <article id="article__page3" class="display-none">
-        <h1>Congrats</h1>
-        <div id="ranking">
-            <!--TODO-Ranking template-->
+        <div class="item-3 container-rankingcontainer activePage">
+            <table class="raking-table flex-end">
+                <thead>
+                    <tr>
+                        <th>classification </th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="player1">Player 1</td>
+                        <td id="time1">Time 1</td>
+                    </tr>
+                    <tr>
+                        <td id="player2">Player 2</td>
+                        <td id="time2">Time 2</td>
+                    </tr>
+                    <tr>
+                        <td id="player3">Player 3</td>
+                        <td id="time3">Time 3</td>
+                    </tr>
+                    <tr>
+                        <td id="player4">Player 4</td>
+                        <td id="time4">Time 4</td>
+                    </tr>
+                    <tr>
+                        <td id="player5">Player 5</td>
+                        <td id="time5">Time 5</td>
+                    </tr>
+                </tbody>
+                </tr>
+            </table>
         </div>
     </article>
-    </div>
 </body>
 
 </html>
