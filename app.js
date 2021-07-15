@@ -4,8 +4,9 @@
 // ----------------------------------------------Get elements--------------------------------------------
 let homePage = document.getElementById("article__page1");
 let gamePage = document.getElementById("article__page2");
-var $userName = document.querySelector("#input-username").value // input value
-var $inputConfirm = document.querySelector("#input-confirm");
+// input value
+
+
 var cardClick = document
     .getElementById("card4") //event to capture click cards events and stop counter
     .addEventListener("click", () => {
@@ -13,27 +14,35 @@ var cardClick = document
         stopInterval();
     });
 var playerPrueba = document.querySelector("#player1")
-    //-----------------------------------------------------Variables--------------------------------------------
+    //     //-----------------------------------------------------Variables--------------------------------------------
 var counter = 0;
 var timing = 0;
 var ranking = [];
 var playerArray = [];
 var playerCom = [];
 let player1 = {
-        name: "",
-        time: 0
-    }
-    //------------------------------------------------ Add Event Listener---------------------------------------
+    name: "",
+    time: 0
+}
+let profiles = [];
+let profile1 = {
+    name: "",
+    time: 0
+};
+let profile2 = {};
+let profile3 = {};
+let profile4 = {};
+// //------------------------------------------------ Add Event Listener---------------------------------------
 let btnNext = document.getElementById("next").addEventListener("click", () => { //when you click start game we have two events
     page1to2(); //switch pages
     timer(); //Satr the counter
+    getValue()
 });
-$inputConfirm.addEventListener("click", getValue);
 // --------------------------------------------------Functions----------------------------------------
-function getValue() { //store the name player in array
-    playerArray.push($userName);
-    console.log(playerArray);
-    playerPrueba.textContent = "player1.name"
+function getValue() {
+    let $userName = document.getElementById("inputuser").value
+    playerArray.push($userName); //store the name player in array
+    console.log($userName);
 }
 
 
@@ -58,18 +67,36 @@ function winTime() { //store the score in array
 
 function stopInterval() {
     clearInterval(timing);
-    player1["name"] = playerArray[0];
-    player1["time"] = ranking[0];
-    console.log(player1);
-    playerPrueba.textContent = "player1.name"
+    profiles.push(profile1);
+    profile1.name = playerArray[0];
+    profile1.time = ranking[0];
+
+    profile2.name = playerArray[1];
+    profile2.time = ranking[1];
+    profiles.push(profile2);
+
+    profile3.name = "name player3";
+    profile3.time = 400;
+    profiles.push(profile3);
+
+    profile4.name = "name player 4";
+    profile4.time = 1900;
+    profiles.push(profile4);
+
+    // sort the array by time
+    // b - a will make highest first, swap them so a - b to make lowest first
+    profiles.sort(function(a, b) {
+        return b.time - a.time;
+    })
+
+    let profilesDiv = document.getElementsByClassName('profiles')[0];
+
+    profiles.forEach(function(entry) {
+        let profile = document.createElement('div');
+        profile.className = "profile";
+        profile.textContent = entry.name + " -- " + entry.time;
+        profilesDiv.appendChild(profile);
+    });
 }
 
-
-
-/* let planA = +
-    console.log(planA); */
-// arrays
-/* var playerCom =
-    playerCom.push()
-console.log(playerCom) */
-//
+// // this is the array that will hold all the profile objects
