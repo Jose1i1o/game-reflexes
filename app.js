@@ -4,7 +4,8 @@
 let homePage = document.getElementById("article__page1");
 let gamePage = document.getElementById("article__page2");
 let thankYouPage = document.getElementById("article__page3");
-let congratsMessage = document.getElementById("congrats");
+let $usernameMens = document.querySelector("#usernameMens");
+let $TimeMens = document.querySelector("#TimeMens");
 
 var cardClick = document
     .getElementById("card4") //event to capture click cards events and stop counter
@@ -12,7 +13,7 @@ var cardClick = document
         winTime();
         stopInterval();
         page2to3();
-        thankYouMessage();
+        imprimir();
     });
 
 var reloadEvent = document
@@ -64,6 +65,14 @@ function page1to2() {
 function page2to3() {
     gamePage.classList.add("display-none");
     thankYouPage.classList.remove("display-none");
+    // document
+    //     .getElementById("congrats")
+    //     .addEventListener("onload", thankYouMessage());
+}
+
+function imprimir() {
+    $usernameMens.textContent = playerArray[0];
+    $TimeMens.textContent = ranking[0];
 }
 
 function resetGame() {
@@ -71,11 +80,42 @@ function resetGame() {
     homePage.classList.remove("display-none");
 }
 
-function thankYouMessage() {
-    var congratsM = `Thank you ${playerArray[0]}
-    your time is ${ranking[0]}`;
-    congratsMessage.appendChild(congratsM);
-}
+// document.getElementById("congrats").addEventListener("onload", textMessage);
+//$usernameMens.addEventListener("click", (event) => {
+
+//});
+
+// function thankYouMessage() {
+//     var textMessage = document.createTextNode(
+//         `Thank you ${this.} your time is ${this.ranking[0]}`
+
+// var newElement = document.createElement("div");
+// newElement.className = "newElement";
+// newElement.textContent = textMessage;
+// newElementsDIV.appendChild(newElement);
+// console.log(textMessage);
+// congratsMessage.appendChild(textMessage);
+// document.getElementById(congrats).appendChild(textMessage);
+//}
+
+//     let profilesDiv = document.getElementsByClassName("profiles")[0];
+
+//     profiles.forEach(function(entry) {
+//         let profile = document.createElement("div");
+//         profile.className = "profile";
+//         profile.textContent = entry.name + " -- " + entry.time;
+//         profilesDiv.appendChild(profile);
+//     });
+// congratsMessage.appendChild(print(congratsM))
+
+// create a new element
+// p or div
+// add innerHTML
+/* .appendChild --> to the div or p */
+//
+//     console.log(congratsM);
+// ;
+// }
 
 function timer() {
     timing = setInterval(() => {
@@ -125,14 +165,6 @@ function stopInterval() {
 //     // profile4.time = 1900;
 //     // profiles.push(profile4);
 
-//     let profilesDiv = document.getElementsByClassName("profiles")[0];
-
-//     profiles.forEach(function(entry) {
-//         let profile = document.createElement("div");
-//         profile.className = "profile";
-//         profile.textContent = entry.name + " -- " + entry.time;
-//         profilesDiv.appendChild(profile);
-//     });
 // // }
 
 // // //select every card by id
@@ -144,3 +176,8 @@ function stopInterval() {
 // //     var randomIndex = Math.floor(Math.random() * 6);
 // //     return randomIndex;
 // // }
+
+// function thankYouMessage() {
+//     var textMessage = document.createTextNode(
+//         `Thank you ${this.playerArray[0]} your time is ${this.ranking[0]}`
+//     );
