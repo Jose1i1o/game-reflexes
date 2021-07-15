@@ -4,8 +4,7 @@
 let homePage = document.getElementById("article__page1");
 let gamePage = document.getElementById("article__page2");
 let thankYouPage = document.getElementById("article__page3");
-let congratsMessage = document.getElementById("congrats");
-// input value
+// let congratsMessage = document.getElementById("congrats");
 
 var cardClick = document
     .getElementById("card4") //event to capture click cards events and stop counter
@@ -13,8 +12,12 @@ var cardClick = document
         winTime();
         stopInterval();
         page2to3();
-        thankYouMessage();
     });
+
+var reloadEvent = document
+    .getElementById("reload")
+    .addEventListener("click", resetGame);
+
 var playerPrueba = document.querySelector("#player1");
 //-----------------------------------------------------Variables--------------------------------------------
 var counter = 0;
@@ -40,6 +43,7 @@ let btnNext = document.getElementById("next").addEventListener("click", () => {
     page1to2(); //switch pages
     timer(); //Satr the counter
     getValue();
+    pageReset();
 });
 
 // let clickLevel1 = document
@@ -57,19 +61,24 @@ function getValue() {
 }
 
 function page1to2() {
-    homePage.style.display = "none"; //switch styles
+    homePage.classList.add("display-none"); //switch styles
     gamePage.classList.remove("display-none");
 }
 
 function page2to3() {
-    gamePage.style.display = "none";
+    gamePage.classList.add("display-none");
     thankYouPage.classList.remove("display-none");
 }
 
-function thankYouMessage() {
-    congratsMessage = `Thank you ${$userName}
-    your time is ${counter}`;
+function resetGame() {
+    thankYouPage.classList.add("display-none");
+    homePage.classList.remove("display-none");
 }
+
+// function thankYouMessage() {
+//     congratsMessage = `Thank you ${$userName}
+//     your time is ${counter}`;
+// }
 
 function timer() {
     timing = setInterval(() => {
