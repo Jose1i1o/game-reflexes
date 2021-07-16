@@ -16,9 +16,11 @@
 
 .logo {
     color: white;
-    background-color: black;
-    padding-bottom: 1.5rem;
+    color: #ffffff;
+    background: rgb(255, 19, 50);
+    background: linear-gradient( 34deg, rgba(255, 19, 50, 1) 0%, rgba(31, 31, 125, 0.7931547619047619) 64%, rgba(255, 255, 255, 1) 100%);
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
     text-align: center;
 }
 
@@ -63,11 +65,12 @@ main {
 }
 
 .section-input-name:hover {
-    background-color: rgb(46, 221, 28);
+    background: rgb(255, 19, 50);
+    background: linear-gradient( 34deg, rgba(255, 19, 50, 1) 0%, rgba(31, 31, 125, 0.7931547619047619) 64%, rgba(255, 255, 255, 1) 100%);
 }
 
 .section-level {
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 
 .foto-provisional {
@@ -91,7 +94,8 @@ main {
 }
 
 .main__button--text:hover {
-    background-color: rgb(46, 221, 28);
+    background: rgb(255, 19, 50);
+    background: linear-gradient( 34deg, rgba(255, 19, 50, 1) 0%, rgba(31, 31, 125, 0.7931547619047619) 64%, rgba(255, 255, 255, 1) 100%);
 }
 
 .item-3 {
@@ -103,7 +107,7 @@ main {
 
 table.raking-table {
     font-family: Arial, Helvetica, sans-serif;
-    border: 2px solid #000000;
+    border: 1px solid #dbdbdb;
     background-color: #fffafb;
     width: 80%;
     text-align: center;
@@ -112,7 +116,7 @@ table.raking-table {
 
 table.raking-table td,
 table.raking-table th {
-    border: 2px solid #000000;
+    border: 1px solid #dbdbdb;
     padding: 6px 3px;
 }
 
@@ -122,7 +126,8 @@ table.raking-table tbody td {
 }
 
 table.raking-table thead {
-    background: rgb(46, 221, 28);
+    background: rgb(255, 19, 50);
+    background: linear-gradient( 34deg, rgba(255, 19, 50, 1) 0%, rgba(31, 31, 125, 0.7931547619047619) 64%, rgba(255, 255, 255, 1) 100%);
 }
 
 table.raking-table thead th {
@@ -144,20 +149,14 @@ table.raking-table thead th:first-child {
 
 .article_main-page--flex {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
 .article_div_main-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 3rem 2rem;
-    grid-auto-flow: row;
-    place-items: center;
-    grid-template-areas: ". . .";
+    display: flex;
+    justify-content: center;
     zoom: 120%;
     margin-bottom: 3rem;
 }
@@ -165,11 +164,9 @@ table.raking-table thead th:first-child {
 .article_div_grid {
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     gap: 3rem 2rem;
-    zoom: 120%;
-    grid-template-areas: ". . ." ". . .";
+    zoom: 50%;
+    grid-template-areas: ". . .";
     justify-content: center;
     align-content: center;
     justify-items: center;
@@ -179,8 +176,8 @@ table.raking-table thead th:first-child {
 .containergrid {
     display: grid;
     grid-template-columns: 60% 40%;
-    grid-template-rows: 25rem;
-    grid-template-areas: "maincontainer  rankingcontainer";
+    grid-template-rows: 35rem 35rem 35rem 35rem 35rem 45rem;
+    grid-template-areas: "maincontainer  rankingcontainer" "footer footer";
     background-color: rgb(255, 255, 255);
 }
 
